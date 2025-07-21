@@ -5,7 +5,9 @@ body, h1, h2, h3, h4, h5, h6, p, div{
 :root{
     --main-color: #004b55;
     --white: #fff;
-    --font-main: "goergia"
+    --font-main: "goergia";
+    --grey: grey;
+    --light-grey: rgb(239, 239, 239);
 }
 .pre-header{
     background-color: var(--main-color);
@@ -17,7 +19,7 @@ body, h1, h2, h3, h4, h5, h6, p, div{
     margin: 0 .4rem;
 }
 header{
-    padding: 2rem 0;
+    padding: 1.5rem 0;
 }
 .logo h1{
     font-weight: 600;
@@ -59,7 +61,7 @@ header{
 }
 .hero{
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./images/bed2.jpeg);
-    height: 80vh;
+    height: 60vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -92,6 +94,63 @@ header{
     background-color: var(--white);
     color: var(--main-color);
 }
+.home-booking .container{
+    margin-top: -2rem;
+    background-image: linear-gradient(rgba(0,75,85,0.7), rgba(0,75,85,0.7));
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+.home-booking .desktop-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* about  */
+.about-section{
+    padding: 6rem 0;
+}
+.about-section .container{
+    display: flex;
+    justify-content: space-between;
+}
+.about-section p{
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+.about-section img{
+    width: 400px;
+}
+.about-section a{
+    color: var(--white);
+}
+
+
+
+/* footer  */
+.footer-section{
+    padding: 5rem 0;
+    background-color: var(--light-grey);
+}
+.footer-section li{
+    list-style: none;
+}
+.footer-section li a{
+    text-decoration: none;
+    color: var(--grey);
+    line-height: 30px;
+}
+.footer-section li a:hover{
+    border-bottom: 1px solid var(--grey);
+}
+.footer-section h6{
+    margin-left: 2rem;
+    color: var(--main-color);
+    font-size: 1.1rem;
+}
+
 
 
 
@@ -155,6 +214,17 @@ header{
         text-decoration: none;
         margin: 2rem;
     }
-    
+    .home-booking .desktop-form{
+        display: block;
+    }
+    .home-booking .desktop-form input, .home-booking .desktop-form select{
+        margin-bottom: 1rem;
+    }
+    .about-section .container{
+        display: block;
+    }
+    .socials{
+        margin-bottom: 2rem;
+    }
     
 }
