@@ -1,0 +1,160 @@
+body, h1, h2, h3, h4, h5, h6, p, div{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --main-color: #004b55;
+    --white: #fff;
+    --font-main: "goergia"
+}
+.pre-header{
+    background-color: var(--main-color);
+    color: var(--white);
+    padding: .2rem;
+}
+.pre-header a{
+    color: var(--white);
+    margin: 0 .4rem;
+}
+header{
+    padding: 2rem 0;
+}
+.logo h1{
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.logo span{
+    display: block;
+    font-weight: 400;
+    letter-spacing: 2rem;
+}
+.logo a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+#menu{
+    display: none;
+}
+#mobile-nav{
+    display: none;
+}
+.desktop-nav ul, #mobile-nav li{
+    list-style: none;
+}
+.desktop-nav li {
+    display: inline-block;
+}
+.desktop-nav ul a{
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0 .5rem;
+}
+.desktop-nav a:hover{
+    border-bottom: 1px solid var(--main-color);
+    padding-bottom: 10px;
+}
+.hero{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./images/bed2.jpeg);
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--white);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero h1{
+    display: none;
+}
+.hero h2{
+    text-transform: capitalize;
+    font-style: italic;
+    font-size: 4rem;
+    font-family: var(--font-main);
+    
+}
+.motto button{
+    background-color: var(--main-color);
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    color: var(--white);
+    padding: .8rem 2.2rem;
+    font-size: 1.5rem;
+}
+.motto button:hover{
+    background-color: var(--white);
+    color: var(--main-color);
+}
+
+
+
+@media(max-width: 450px){
+    .pre-header{
+        display: none;
+    }
+    header{
+        display: none;
+    }
+    .hero h1{
+        font-size: 1rem;
+        display: block;
+        color: var(--white);
+    }
+    .hero span{
+        letter-spacing: 20px;
+        margin-left: 15px;
+    }
+    #menu{
+        display: block;
+        font-size: 2rem;
+        padding: 0 1rem;
+        border: 1px solid var(--white);
+        border-radius: 10px;
+    }
+    #mobile-nav{
+        background-color: var(--white);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 1rem;
+    }x
+    #mobile-nav i{
+        font-size: 2.3rem;
+    }
+    .hero{
+        padding: 1rem;
+        display: block;
+        height: 60vh;
+    }
+    .hero h2{
+        font-size: 2rem;
+    }
+    .hero .motto{
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #mobile-nav i{
+        font-size: 2.3rem;
+    }
+    #mobile-nav ul{
+        border-left: 1px solid grey;
+    }
+    #mobile-nav a{
+        color: var(--main-color);
+        text-transform: uppercase;
+        text-decoration: none;
+        margin: 2rem;
+    }
+    
+    
+}
