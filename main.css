@@ -150,6 +150,18 @@ header{
     color: var(--main-color);
     font-size: 1.1rem;
 }
+.footer-box{
+    display: flex;
+    justify-content: space-between;
+}
+.service-section{
+    padding: 5rem 0;
+}
+.service-section .container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
 
 
 
@@ -214,17 +226,39 @@ header{
         text-decoration: none;
         margin: 2rem;
     }
-    .home-booking .desktop-form{
-        display: block;
-    }
+    
     .home-booking .desktop-form input, .home-booking .desktop-form select{
         margin-bottom: 1rem;
     }
-    .about-section .container{
-        display: block;
-    }
     .socials{
         margin-bottom: 2rem;
+    }
+    .blog-post{
+        display: none;
+    }
+
+    /* reusable  */
+    .home-booking .desktop-form, .about-section .container, .service-section .container, .footer-box{
+        display: block;
+    }
+
+    /* footer  */
+    
+    .footer-section{
+        font-size: 130%;
+        padding: 2rem 0;
+    }
+    .footer-section .logo{
+        text-align: center;
+    }
+    .footer-section .logo span{
+        margin-left: 2rem;
+    }
+    .footer-box1{
+        margin-bottom: 2rem;
+    }
+    .footer-section h6{
+        font-size: 1.6rem;
     }
     
 }
