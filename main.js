@@ -77,8 +77,12 @@ homeForm.addEventListener('submit', function (e) {
     let hotelLocation = document.getElementById('home-location').value;
     let roomType = document.getElementById('home-type').value;
     let checkIn = document.getElementById('date1').value;
-    // let checkOut = document.getElementById('date2').value;
+    let checkOut = document.getElementById('date2').value;
     alert('The Room type ' + roomType + ' at ' + hotelLocation + " with the check in date " + checkIn + ' is currently available/unavailable')
+    hotelLocation = ''
+    roomType = ''
+    checkIn = ''
+    checkOut = ''
 })
 
 
@@ -90,6 +94,7 @@ newsLetter.addEventListener('submit', function(e){
     let newsEmail = document.getElementById('news-letter-email').value;
     if(newsEmail.includes('@')){
         alert('Thank you for subscribing to out news letter')
+        newsEmail = ''
     }else{
         alert('Please enter a valid email')
     }
