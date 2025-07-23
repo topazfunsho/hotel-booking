@@ -95,30 +95,36 @@
     <!-- booking section  -->
     <div class="home-booking">
       <div class="container">
-        <form action="" class="desktop-form">
-          <select name="" id="" class="form-control me-2">
-            <option value="">location</option>
-            <option value="">Lagos</option>
-            <option value="">Abuja</option>
+        <form class="desktop-form" id="home-form">
+          <select name="home-location" id="home-location" class="form-control me-2">
+            <option value="location">location</option>
+            <option value="Lagos">Lagos</option>
+            <option value="Abuja">Abuja</option>
           </select>
           <!-- <i class="bi bi-arrow-down"></i> -->
 
-          <select name="" id="" class="form-control me-2">
-            <option value="">type</option>
-            <option value="">Double</option>
-            <option value="">Economy</option>
-            <option value="">Precidential</option>
-            <option value="">Standard</option>
+          <select name="home-type" id="home-type" class="form-control me-2">
+            <option value="type">type</option>
+            <option value="Double">Double</option>
+            <option value="Economy">Economy</option>
+            <option value="Precidential">Precidential</option>
+            <option value="Standard">Standard</option>
           </select>
           <input
-            type="date"
-            placeholder="check-in date"
             class="form-control me-2"
+            type="text"
+            id="date1"
+            placeholder="check-in date"
+            onfocus="(this.type='date')"
+            onblur="if(this.value==''){this.type='text'}"
           />
           <input
-            type="date"
-            placeholder="check-out date"
             class="form-control me-2"
+            type="text"
+            id="date2"
+            placeholder="check-out date"
+            onfocus="(this.type='date')"
+            onblur="if(this.value==''){this.type='text'}"
           />
           <button type="submit" class="form-control">Search</button>
         </form>
@@ -285,7 +291,7 @@
         <a href=""
           ><div class="card">
             <img src="./images/bed2.jpeg" alt="" class="w-100" />
-            <h3>Presidential Suite</h3>
+            <h3>Standard Suite</h3>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
               iusto nisi eligendi dolores! Rem possimus magnam modi voluptatum
@@ -297,7 +303,7 @@
         <a href=""
           ><div class="card">
             <img src="./images/bed2.jpeg" alt="" class="w-100" />
-            <h3>Presidential Suite</h3>
+            <h3>Economy Suite</h3>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
               iusto nisi eligendi dolores! Rem possimus magnam modi voluptatum
@@ -309,7 +315,7 @@
         <a href=""
           ><div class="card">
             <img src="./images/bed2.jpeg" alt="" class="w-100" />
-            <h3>Presidential Suite</h3>
+            <h3>Double Suite</h3>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
               iusto nisi eligendi dolores! Rem possimus magnam modi voluptatum
@@ -325,9 +331,10 @@
     <div class="news-letter-section">
       <div class="container">
         <div>
+            <h2>news letter</h2>
           <h4>Sign up for our news letter to get our latest updates</h4>
-          <form action="">
-            <input type="email" placeholder="@mail.com" class="form-control" />
+          <form id="news-letter-form">
+            <input type="email" placeholder="@mail.com" id="news-letter-email" class="form-control" />
             <button type="submit" class="form-control">Subscribe</button>
           </form>
         </div>

@@ -87,7 +87,7 @@ header{
 }
 .motto button{
     background-color: var(--main-color);
-    border-radius: 1rem;
+    border-radius: 5rem;
     border: none;
     outline: none;
     color: var(--white);
@@ -108,6 +108,12 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.home-booking .desktop-form button{
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--main-color);
+    letter-spacing: .2rem;
 }
 
 
@@ -177,6 +183,15 @@ header{
     align-items: center;
     text-align: center;
     color: var(--white);
+}
+.news-letter-section h2{
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--white);
+    justify-self: center;
+    width: 300px;
 }
 .news-letter-section .container form{
     display: flex;
