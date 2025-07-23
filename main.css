@@ -135,6 +135,15 @@ header{
 .service-section, .bookin-card-section{
     padding: 5rem 0;
 }
+.service-section .blog-post a li{
+    padding: .5rem 0;
+    color: var(--grey);
+    text-transform: uppercase;
+}
+.blog-post h3{
+    text-transform: uppercase;
+    font-weight: 300;
+}
 .service-section .container, .bookin-card-section .container{
     display: flex;
     justify-content: space-between;
@@ -146,7 +155,7 @@ header{
     border: 1px solid var(--main-color);
     padding: 1rem 0;
 }
-.bookin-card-section a{
+.bookin-card-section a, .service-section a{
     text-decoration: none;
 }
 
@@ -188,9 +197,15 @@ header{
 /* testimonila section  */
 .testimonial-section{
     padding: 5rem 0;
-    background-color: var(--grey);
-    display: flex;
-    justify-content: center;
+}
+.testimonial-section h2{
+    color: var(--main-color);
+    font-size: 2.5rem;
+    font-weight: 300;
+    font-family: var(--font-main);
+}
+.testimonial-section button{
+    background-color: var(--main-color);
 }
 
 
@@ -199,6 +214,11 @@ header{
     padding: 5rem 0;
     background-color: var(--light-grey);
 }
+
+iframe {
+      width: 100%;
+      margin-top: 2rem;
+    }
 .footer-section li{
     list-style: none;
 }
@@ -290,6 +310,9 @@ header{
     .about-section p{
         font-size: 1rem;
     }
+    .about-section img{
+    width: 375px;
+}
     
     .home-booking .desktop-form input, .home-booking .desktop-form select{
         margin-bottom: 1rem;
